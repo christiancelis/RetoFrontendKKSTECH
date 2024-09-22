@@ -13,7 +13,7 @@
     <title>Project-Manager</title>
     <style>
         body {
-            height: 100vh;
+            height: 90vh;
             
         }
 
@@ -61,6 +61,7 @@
 
             height: 150px;
             width: 150px;
+            padding: 5px;
             background-color: rgb(255, 255, 255);
             border-radius: 20px;
             -webkit-box-shadow: 0px 0px 20px -7px rgb(142, 141, 141);
@@ -152,6 +153,7 @@
         nav {
             position: fixed;
             top: 0;
+            filter: blur(1);
         }
 
         .nombre {
@@ -161,6 +163,56 @@
         menu {
             margin: 0;
             padding: 0;
+            gap: 20px;
+        }
+
+        #info-Admin {
+            gap: 0px;
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            body {
+                height: 90vh;
+                padding-top: 80px ;
+            }
+
+            nav {
+                z-index: 1;
+            }
+
+            #logout p {
+                display: none;
+            }
+
+            .tarjeta-item {
+                padding: 5px;
+                height: 110px;
+            }
+
+            menu {
+                width: 80%;
+            }
+
+            menu img {
+                width: 45px;
+            }
+
+            .nombre {
+                font-size: 1.3rem;
+            }
+
+            #logout img {
+                width: 50px;
+            }
+
+            #foto-perfil {
+                width: 120px;
+                height: 120px;
+            }
+
+
+        
         }
 
         
@@ -183,16 +235,16 @@
             <p class="texto-fuente-playwrite nombre">Carlos Jhoan Aguilar</p>
             <p class="texto-fuente-playwrite">Project Manager</p>
         </div>
-        <menu class="d-flex flex-wrap w-100 gap-5 justify-content-center">
-            <div id="bot-proyectos" class="display-vertical-around tarjeta-item p-2">
+        <menu class="d-flex flex-wrap justify-content-center">
+            <div id="bot-proyectos" class="display-vertical-around tarjeta-item">
                 <img src="../Images/project_2.png" alt="" id="icono-proyectos">
                 <p class="texto-fuente-playwrite letra-bold">Proyectos</p>
             </div>
-            <div id="bot-mi-team" class="display-vertical-around tarjeta-item p-2">
+            <div id="bot-mi-team" class="display-vertical-around tarjeta-item">
                 <img src="../Images/team.png" alt="" id="icono-mi-team" >
                 <p class="texto-fuente-playwrite letra-bold">Mi Team</p>
             </div>
-            <div id="bot-estadisticas" class="display-vertical-around tarjeta-item p-2">
+            <div id="bot-estadisticas" class="display-vertical-around tarjeta-item">
                 <img src="../Images/stats_5.png" alt="" id="icono-estadisticas">
                 <p class="texto-fuente-playwrite letra-bold">Estadísticas</p>
             </div>
